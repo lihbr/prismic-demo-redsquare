@@ -1,0 +1,8 @@
+{
+  "apiEndpoint": "https://slicezone-redsquare.cdn.prismic.io/api/v2",
+  "libraries": [
+    "@/slices"
+  ],
+  "_latest": "0.0.46",
+  "storybook": "http://localhost:3003"
+}

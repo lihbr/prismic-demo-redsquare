@@ -1,0 +1,27 @@
+{
+  "id": "display_text",
+  "type": "SharedSlice",
+  "name": "DisplayText",
+  "description": "DisplayText",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "DisplayText",
+      "primary": {
+        "text": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading2,heading3,strong,em,hyperlink"
+          },
+          "type": "StructuredText"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

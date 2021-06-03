@@ -1,0 +1,26 @@
+{
+  "id": "image_switcher",
+  "type": "SharedSlice",
+  "name": "ImageSwitcher",
+  "description": "ImageSwitcher",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ImageSwitcher",
+      "primary": {},
+      "items": {
+        "image": {
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      }
+    }
+  ]
+}
