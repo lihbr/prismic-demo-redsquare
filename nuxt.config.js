@@ -1,3 +1,5 @@
+import { getStoriesPaths } from 'slice-machine-ui/helpers/storybook';
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -43,13 +45,11 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ["nuxt-sm"],
 
   image: {
     provider: "prismic",
-    prismic: {
-      baseURL: "https://images.unsplash.com"
-    }
+    prismic: {}
   },
 
   prismic: {
@@ -63,7 +63,7 @@ export default {
   },
 
   storybook: {
-    stories: ["~/slices/**/*.stories.[tj]s", "~/.slicemachine/assets/slices/**/*.stories.[tj]s"]
+    stories: [...getStoriesPaths()]
   },
 
   ignore: ["**/*.stories.js"],

@@ -21,7 +21,8 @@ export default {
 
 <style>
 .richtext h2 {
-  @apply text-6xl font-extrabold mb-12 leading-loose;
+  @apply text-6xl font-extrabold mb-12;
+  line-height: 1.3;
 }
 
 .richtext p {

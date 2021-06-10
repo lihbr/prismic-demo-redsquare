@@ -8,20 +8,15 @@
       "title": [
         {
           "type": "heading2",
-          "text": "Visualize transparent mindshare",
+          "text": "Deliver vertical e-commerce",
           "spans": []
         }
       ],
       "list": [
         {
-        "type": "list-item",
-        "text": "My first elemetn",
-        "spans": [ ]
-        },
-        {
-        "type": "list-item",
-        "text": "my second element",
-        "spans": [ ]
+          "type": "paragraph",
+          "text": "Labore quis laborum amet sint ullamco. Ipsum occaecat nisi veniam nostrud qui officia do eiusmod Lorem do duis laborum. Reprehenderit deserunt veniam occaecat deserunt enim.",
+          "spans": []
         }
       ]
     }

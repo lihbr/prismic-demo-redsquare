@@ -1,0 +1,24 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "example_slice",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Synthesize open-source bandwidth",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Non deserunt quis dolor ad ut elit commodo consectetur aliquip proident anim.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

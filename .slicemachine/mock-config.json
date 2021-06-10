@@ -1,0 +1,12 @@
+{
+  "_cts": {
+    "page": {}
+  },
+  "slices": {
+    "DisplayText": {},
+    "ClientList": {},
+    "ImageSwitcher": {},
+    "MainTitle": {},
+    "ExampleSlice": {}
+  }
+}
