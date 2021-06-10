@@ -14,9 +14,14 @@
       ],
       "list": [
         {
-          "type": "paragraph",
-          "text": "Qui deserunt consectetur elit laboris mollit esse ut ex Lorem aliqua ipsum adipisicing duis. Dolore ipsum consequat cillum velit adipisicing in.",
-          "spans": []
+        "type": "list-item",
+        "text": "My first elemetn",
+        "spans": [ ]
+        },
+        {
+        "type": "list-item",
+        "text": "my second element",
+        "spans": [ ]
         }
       ]
     }

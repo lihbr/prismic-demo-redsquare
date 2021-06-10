@@ -1,6 +1,6 @@
 <template>
-  <section class="section">
-    <prismic-rich-text :field="slice.primary.title" class="title" />
+  <section class="section bg-black h-[80vh] px-12 pt-16 lg:px-40 lg:pt-32 flex items-end">
+    <prismic-rich-text :field="slice.primary.title" class="text-5xl leading-tight lg:text-8xl font-serif" />
   </section>
 </template>
 
@@ -19,22 +19,3 @@ export default {
 }
 </script>
 
-<style scoped>
-.section {
-  height: 80vh;
-  padding: 0 50px 60px 50px;
-  background: #111111;
-  display: flex;
-  align-items: flex-end;
-  font-size: 3rem;
-  line-height: 1.25;
-  font-family: "yeseva one"
-}
-
-@media (min-width: 1040px) {
-  .section {
-    font-size: 5rem;
-    padding: 0 160px 140px 160px;
-  }
-}
-</style>

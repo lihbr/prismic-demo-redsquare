@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-velvet">
     <Nuxt />
   </div>
 </template>
@@ -13,7 +13,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  @apply bg-black text-white font-sans;
+  background: #111111;
+  color: #fefefe;
+  font-family: "Montserrat";
 }
 
 *,

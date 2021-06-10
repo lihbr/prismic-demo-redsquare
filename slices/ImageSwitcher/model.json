@@ -10,7 +10,16 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "ImageSwitcher",
-      "primary": {},
+      "primary": {
+        "action": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true
+          }
+        }
+      },
       "items": {
         "image": {
           "config": {

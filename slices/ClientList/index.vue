@@ -1,7 +1,7 @@
 <template>
-  <section class="section">
-    <prismic-rich-text :field="slice.primary.title" class="title" />
-    <prismic-rich-text :field="slice.primary.description" />
+  <section class="section px-12 pt-16 lg:px-40 lg:pt-32 flex">
+    <prismic-rich-text :field="slice.primary.title" class="title text-grey font-bold w-[40%]" />
+    <prismic-rich-text :field="slice.primary.list" class="w-[60%] list font-bold" />
   </section>
 </template>
 
@@ -20,18 +20,12 @@ export default {
 }
 </script>
 
-<style scoped>
-.section {
-  position: relative;
-  background: #f7f7f7;
-  color: #111;
-  padding: 4em;
-  text-align: center;
+<style>
+.list ul {
+  @apply flex flex-col flex-wrap h-[400px];
 }
-a {
-  color: #111;
-}
-.title {
-  margin-bottom: 2em;
+
+.list li {
+  @apply w-[50%] mb-4;
 }
 </style>

@@ -1,7 +1,6 @@
 <template>
-  <section class="section">
-    <prismic-rich-text :field="slice.primary.title" class="title" />
-    <prismic-rich-text :field="slice.primary.description" />
+  <section class="section px-12 pt-16 lg:px-40 lg:pt-32">
+    <prismic-rich-text :field="slice.primary.text" class="richtext" />
   </section>
 </template>
 
@@ -20,18 +19,12 @@ export default {
 }
 </script>
 
-<style scoped>
-.section {
-  position: relative;
-  background: #f7f7f7;
-  color: #111;
-  padding: 4em;
-  text-align: center;
+<style>
+.richtext h2 {
+  @apply text-6xl font-extrabold mb-12 leading-loose;
 }
-a {
-  color: #111;
-}
-.title {
-  margin-bottom: 2em;
+
+.richtext p {
+  @apply text-3xl font-bold leading-loose;
 }
 </style>

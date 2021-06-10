@@ -1,8 +1,8 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  // Global page headers: https://go.nuxtjs.dev/config-head
 
+  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'slicezone-redsquare',
     htmlAttrs: {
@@ -38,10 +38,19 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     "@nuxtjs/prismic",
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    "@nuxt/image"
   ],
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
+
+  image: {
+    provider: "prismic",
+    prismic: {
+      baseURL: "https://images.unsplash.com"
+    }
+  },
 
   prismic: {
     endpoint: "https://slicezone-redsquare.cdn.prismic.io/api/v2",
@@ -52,12 +61,15 @@ export default {
       }]
     }
   },
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    transpile: ["vue-slicezone", "nuxt-sm"]
-  },
+
   storybook: {
     stories: ["~/slices/**/*.stories.[tj]s", "~/.slicemachine/assets/slices/**/*.stories.[tj]s"]
   },
-  ignore: ["**/*.stories.js"]
+
+  ignore: ["**/*.stories.js"],
+
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {
+    transpile: ["vue-slicezone", "nuxt-sm"]
+  }
 };

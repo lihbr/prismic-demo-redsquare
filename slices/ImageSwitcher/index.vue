@@ -1,13 +1,24 @@
 <template>
-  <section class="section">
-    <prismic-rich-text :field="slice.primary.title" class="title" />
-    <prismic-rich-text :field="slice.primary.description" />
+  <section class="section px-12 pt-16 lg:px-40 lg:pt-32" @click="index++">
+    <prismic-link :field="slice.primary.action" class="group py-5">
+      <nuxt-img
+        class="block w-full h-screen rounded transform group-hover:scale-95 transition-transform object-cover"
+        v-if="slice.items[index % slice.items.length].image.url"
+        :src="slice.items[index % slice.items.length].image.url"
+        sizes="md:100vw lg:900px xl:1480px"
+      />
+    </prismic-link>
   </section>
 </template>
 
 <script>
 export default {
   name: "ImageSwitcher",
+  data() {
+    return {
+      index: 0
+    }
+  },
   props: {
     slice: {
       type: Object,
@@ -17,21 +28,10 @@ export default {
       },
     },
   },
+  mounted() {
+    setInterval(() => {
+      this.index++;
+    }, 250);
+  }
 }
 </script>
-
-<style scoped>
-.section {
-  position: relative;
-  background: #f7f7f7;
-  color: #111;
-  padding: 4em;
-  text-align: center;
-}
-a {
-  color: #111;
-}
-.title {
-  margin-bottom: 2em;
-}
-</style>
