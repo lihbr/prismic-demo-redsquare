@@ -29,10 +29,10 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@fontsource/montserrat", "@fontsource/yeseva-one"],
+  css: ["@fontsource/montserrat", "@fontsource/yeseva-one", "splitting/dist/splitting.css", "splitting/dist/splitting-cells.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ["~/plugins/splitting.client.js"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
